@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body class="dynamic-background">
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+    <div class="noise"></div>
+    <div class="lowbg"></div>
+    <div class="content">
+      <header>
+        <nav class="nav">
+          <a href="/" class="logo" data-text="Jacob Koppel Egierd"></a>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="nav_link hide">
+            <a href="#">about</a>
+            <a href="#">work</a>
+            <a href="#">notes</a>
+            <div class="nav_connect">
+              <a href="#">connect</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <h4>portfolio</h4>
+        <div class="stagger">
+        </div>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="gallery-image" src="../src/assets/visuals/content/1.jpg" alt="Image 1" />
+          </div>
+          <div class="swiper-slide">
+            <img class="gallery-image" src="../src/assets/visuals/content/2.jpg" alt="Image 2" />
+          </div>
+          <div class="swiper-slide">
+            <img class="gallery-image" src="../src/assets/visuals/content/3.jpg" alt="Image 3" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div>
+        <p>Jacob Koppel Egierd Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+      </div>
+       <div class="circle">
+       </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/node-vibrant/dist/vibrant.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="../src/js/swiper-init.js"></script>
+    <script type="module" src="../src/js/background-upper.js"></script>
+    <script type="module" src="../src/js/background-lower.js"></script>
+    <script type="module" src="../src/js/gradient.js"></script>
+
+  </body>
+</html>
